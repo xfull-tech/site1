@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 这里控制浏览器标签页显示的标题 -->
-    <title>Printer Cleaning Kits | Toner Cartridges | Printer Ribbons | PVC Cards - XFULL Tech</title>
+    <title>Printer Cleaning Kits | Thermal Paper | POS Stickers | Toner Cartridges | Printer Ribbons | PVC Cards - XFULL Tech</title>
     <meta name="description" content="XFULL Tech focuses on printer consumables, cleaning kits, toner cartridges, ribbons, and PVC cards. Reliable sourcing partner from China.">
     
     <style>
@@ -67,8 +67,12 @@
 
         /* 产品网格 */
         .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: grid;
+    /* 意思是：尽量每列至少 200px 宽，如果空间够就排成一行，不够就自动换行 */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 15px;
+    margin-bottom: 30px;
+}
             gap: 20px;
             margin-bottom: 40px;
         }

@@ -77,13 +77,20 @@
             margin-bottom: 40px;
         }
         .product-card {
-            background: white;
-            border: 1px solid #e1e4e8;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            transition: transform 0.2s;
-        }
+    background: white;
+    border: 1px solid #e2e8f0;       /* 新增：浅灰色细边框 */
+    border-radius: 16px;
+    padding: 24px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;       /* 优化：让 hover 效果更平滑 */
+}
+
+/* 鼠标悬停时的效果：边框变深，阴影加深 */
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #1e3a8a;           /* 新增：悬停时边框变成品牌蓝 */
+    box-shadow: 0 10px 25px rgba(30, 58, 138, 0.15);
+}
         .product-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);

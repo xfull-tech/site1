@@ -77,12 +77,19 @@
             margin-bottom: 40px;
         }
         .product-card {
+   .card {
     background: white;
-    border: 1px solid #94a3b8;       /* 新增：灰色边框 */
-    border-radius: 16px;
+    border-radius: 14px;
     padding: 24px 20px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-    transition: all 0.3s ease;       /* 优化：让 hover 效果更平滑 */
+    transition: 0.2s ease;
+    border: 2px solid #cbd5e1;   /* 灰色边框，厚度 2px */
+}
+
+/* 鼠标悬停时边框变深色，增加互动感 */
+.card:hover {
+    border-color: #1e3a8a;        /* 悬停时变品牌蓝色 */
+}
 }
 
 /* 鼠标悬停时的效果：边框变深，阴影加深 */

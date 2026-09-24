@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Catalogs - XFULL Tech</title>
+    <title>Cleaning Supplies Catalogs - XFULL Tech</title>
     <style>
         body { font-family: "Segoe UI", Roboto, sans-serif; background: #f8fafc; color: #1e293b; padding: 40px 20px; line-height: 1.6; }
         .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-        h1 { color: #0f172a; text-align: center; margin-bottom: 30px; border-bottom: 2px solid #e2e8f0; padding-bottom: 15px; }
+        h1 { color: #0f172a; text-align: center; margin-bottom: 10px; }
+        p.subtitle { text-align: center; color: #64748b; margin-bottom: 30px; }
         .pdf-list { list-style: none; padding: 0; }
-        .pdf-item { margin-bottom: 20px; padding: 15px; background: #f1f5f9; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; transition: 0.2s; }
+        .pdf-item { margin-bottom: 15px; padding: 15px; background: #f1f5f9; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; transition: 0.2s; border-left: 4px solid #1e3a8a; }
         .pdf-item:hover { background: #e2e8f0; transform: translateX(5px); }
-        .pdf-name { font-weight: 600; color: #334155; flex: 1; }
-        .download-btn { background: #1e3a8a; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-size: 0.9rem; white-space: nowrap; }
+        .pdf-name { font-weight: 600; color: #334155; flex: 1; font-size: 0.95rem; }
+        .download-btn { background: #1e3a8a; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; white-space: nowrap; font-weight: 500; }
         .download-btn:hover { background: #0f172a; }
-        .back-link { display: block; text-align: center; margin-top: 30px; color: #64748b; text-decoration: none; }
+        .back-link { display: block; text-align: center; margin-top: 30px; color: #64748b; text-decoration: none; font-weight: 500; }
         .back-link:hover { color: #1e3a8a; }
         
         @media (max-width: 600px) {
@@ -26,8 +27,8 @@
 <body>
 
 <div class="container">
-    <h1>📄 Product Catalogs</h1>
-    <p style="text-align: center; color: #64748b; margin-bottom: 30px;">Download our detailed product specifications and cleaning guides.</p>
+    <h1>🧹 Printer Cleaning Supplies</h1>
+    <p class="subtitle">Download detailed catalogs for major printer brands.</p>
 
     <ul class="pdf-list">
         <!-- 1. Zebra -->
@@ -48,9 +49,9 @@
             <a href="HID-(FARGO)-Card-Printer-Cleaning-Kits.pdf" target="_blank" class="download-btn">⬇️ Download PDF</a>
         </li>
 
-        <!-- 4. Re-transfer (JVC/DNP/etc) -->
+        <!-- 4. Re-transfer (Multi-brand) -->
         <li class="pdf-item">
-            <span class="pdf-name">🔄 Re-transfer Printer Kits (JVC, DNP, Magicard, etc.)</span>
+            <span class="pdf-name">🔄 Re-transfer Printer Kits (JVC, DNP, Magicard, Datacard...)</span>
             <a href="Re-transfer-Printer-JVC-DNP-Magicard-Matica-Bravo-Datacard-Cleaning-Kits-XFULL.pdf" target="_blank" class="download-btn">⬇️ Download PDF</a>
         </li>
 

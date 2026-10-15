@@ -22,18 +22,15 @@
             line-height: 1.6;
             background-color: #fff;
         }
-        
         <header>
     <div class="header-content">
-        <!-- 这里放 Logo 图片，src="" logo.png -->
-        <img src="logo.png" alt="XFULL Tech Logo" class="site-logo">
-        
+        <img src="logo.png" alt="XFULL Logo" class="site-logo">
         <div class="header-text">
             <h1>XFULL Tech</h1>
-            <p>Your Reliable Partner for Cleaning Products &amp; Consumables</p>
+            <p>Your Partner for Precision Cleaning Solutions, Printer Cleaning Kits, Cleanroom, Printer Consumables, Security ID Cards </p>
         </div>
     </div>
-</header>
+
         }
 
         /* 容器 */
@@ -162,55 +159,46 @@
     </style>
 </head>
 <body>
-/* Header 整体背景 */
-header {
-    background: linear-gradient(135deg, #0f172a, #1e3a8a);
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-}
+        header {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
 
-/* 头部内容容器，让 Logo 和文字居中排列 */
-.header-content {
-    display: flex;
-    flex-direction: column; /* 垂直排列：Logo 在上，文字在下 */
-    align-items: center;    /* 水平居中 */
-    justify-content: center;
-    gap: 15px;              /* Logo 和文字之间的间距 */
-}
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
 
-/* Logo 图片样式 */
-.site-logo {
-    height: 60px;           /* 控制 Logo 高度，可根据需要调整，比如 50px 或 80px */
-    width: auto;            /* 宽度自动适应 */
-    background: white;      /* 如果 Logo 透明，加个白色背景更显眼 */
-    padding: 5px;
-    border-radius: 8px;     /* 圆角 */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
+        .site-logo {
+            height: 60px;
+            width: auto;
+            background: white;
+            padding: 5px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
 
-/* 标题和副标题样式 */
-.header-text h1 {
-    margin: 0;
-    font-size: 2rem;
-    letter-spacing: 1px;
-}
+        .header-text h1 {
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
 
-.header-text p {
-    margin-top: 10px;
-    font-size: 1.1rem;
-    opacity: 0.9;
-}
+        .header-text p {
+            margin-top: 8px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
 
-/* 手机端适配 */
-@media (max-width: 600px) {
-    .site-logo {
-        height: 50px;       /* 手机上 Logo 稍微小一点 */
-    }
-    .header-text h1 {
-        font-size: 1.5rem;
-    }
-}
+        @media (max-width: 600px) {
+            .site-logo { height: 50px; }
+            .header-text h1 { font-size: 1.5rem; }
+        }
 
     <div class="container">
         

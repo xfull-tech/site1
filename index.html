@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>ID Card Accessories | PVC Cards | Chip Cards | Lanyards | RFID Protection - XFULL Tech</title>
-<meta name="description" content="XFULL Tech - Your partner for ID card accessories and precision cleaning solutions. PVC cards, smart cards, lanyards, RFID protectors, printer cleaning kits and cleanroom consumables." />
+<title>ID Card Accessories | PVC Cards | Lanyards | RFID Protection - XFULL Tech</title>
+<meta name="description" content="XFULL Tech - Your partner for ID card accessories and precision cleaning solutions. PVC cards, smart chip cards, lanyards, RFID protectors, and cleaning kits." />
 <style>
     :root {
         --primary: #1e3a8a;
@@ -28,7 +28,7 @@
     header {
         background: linear-gradient(135deg, #0f172a, #1e3a8a);
         color: white;
-        padding: 30px 20px;
+        padding: 40px 20px 30px;
         text-align: center;
     }
     .header-content {
@@ -36,49 +36,51 @@
         flex-direction: column;
         align-items: center;
         gap: 15px;
-        max-width: 1100px;
-        margin: 0 auto;
     }
     .site-logo {
-        height: 50px;
+        height: 60px;
         width: auto;
         background: white;
-        padding: 5px;
-        border-radius: 6px;
+        padding: 6px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
     .header-text h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-weight: 700;
         letter-spacing: 1px;
     }
     .header-text p {
-        font-size: 1rem;
-        opacity: 0.9;
+        font-size: 1.05rem;
+        opacity: 0.92;
+        max-width: 700px;
+        margin: 10px auto 0;
     }
 
     /* BANNER */
-    .banner-container {
+    .banner-wrapper {
         max-width: 1100px;
-        margin: 30px auto;
+        margin: 30px auto 0;
         padding: 0 20px;
     }
     .banner-img {
         width: 100%;
         height: auto;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        border-radius: 14px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        display: block;
     }
 
     /* CONTAINER */
     .container {
         max-width: 1100px;
         margin: 0 auto;
-        padding: 40px 20px;
+        padding: 50px 20px;
     }
 
     /* SECTION TITLE */
     .section-title {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         color: var(--dark);
         border-left: 5px solid var(--primary);
         padding-left: 15px;
@@ -88,8 +90,8 @@
     /* ABOUT */
     .about {
         background: white;
-        padding: 30px;
-        border-radius: 12px;
+        padding: 35px 30px;
+        border-radius: 14px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.04);
         margin-bottom: 40px;
     }
@@ -104,11 +106,11 @@
     }
     .card {
         background: white;
-        border-radius: 12px;
+        border-radius: 14px;
         overflow: hidden;
         box-shadow: 0 4px 12px rgba(0,0,0,0.06);
         transition: 0.25s ease;
-        border: 1px solid var(--border);
+        border: 2px solid var(--border);
         display: flex;
         flex-direction: column;
     }
@@ -124,23 +126,26 @@
         background: #eef2f7;
     }
     .card-body {
-        padding: 20px;
+        padding: 22px;
         flex: 1;
+        display: flex;
+        flex-direction: column;
     }
     .card-body h3 {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         color: var(--dark);
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
     .card-body ul {
         list-style: none;
         padding: 0;
+        flex: 1;
     }
     .card-body li {
-        padding: 4px 0 4px 18px;
+        padding: 4px 0 4px 20px;
         position: relative;
         color: #475569;
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
     .card-body li::before {
         content: "✔";
@@ -153,8 +158,8 @@
     /* WHY CHOOSE US */
     .why {
         background: white;
-        padding: 30px;
-        border-radius: 12px;
+        padding: 35px 30px;
+        border-radius: 14px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.04);
         margin-bottom: 40px;
     }
@@ -166,14 +171,14 @@
     }
     .why li {
         background: #f1f5f9;
-        padding: 12px 15px;
-        border-radius: 8px;
-        font-size: 0.9rem;
+        padding: 15px 18px;
+        border-radius: 10px;
+        font-size: 0.95rem;
         color: var(--dark);
-        border-left: 3px solid var(--primary);
+        border-left: 4px solid var(--primary);
     }
 
-    /* CTA BUTTON */
+    /* CTA */
     .cta {
         text-align: center;
         margin: 40px 0;
@@ -182,23 +187,25 @@
         display: inline-block;
         background: var(--primary);
         color: white;
-        padding: 12px 35px;
-        border-radius: 30px;
+        padding: 15px 40px;
+        border-radius: 40px;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 1.05rem;
         transition: 0.2s;
     }
-    .cta a:hover { background: var(--dark); }
+    .cta a:hover {
+        background: var(--dark);
+    }
 
     /* CONTACT */
     .contact {
         background: white;
-        padding: 30px;
-        border-radius: 12px;
+        padding: 35px 30px;
+        border-radius: 14px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.04);
     }
     .contact p {
-        margin: 10px 0;
+        margin: 12px 0;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -207,25 +214,33 @@
     .contact .label {
         font-weight: 600;
         color: var(--muted);
-        min-width: 100px;
+        min-width: 110px;
     }
-    .contact a { color: var(--primary); font-weight: 500; }
-    .contact a:hover { text-decoration: underline; }
+    .contact a {
+        color: var(--primary);
+        font-weight: 500;
+    }
+    .contact a:hover {
+        text-decoration: underline;
+    }
 
     /* FOOTER */
     footer {
         text-align: center;
-        padding: 25px 20px;
+        padding: 30px 20px;
         color: #94a3b8;
         border-top: 1px solid #e2e8f0;
         margin-top: 40px;
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 
     /* RESPONSIVE */
     @media (max-width: 600px) {
-        .header-text h1 { font-size: 1.5rem; }
+        .header-text h1 { font-size: 1.6rem; }
+        .header-text p { font-size: 0.95rem; }
+        .section-title { font-size: 1.4rem; }
         .grid { grid-template-columns: 1fr; }
+        .contact p { flex-direction: column; align-items: flex-start; gap: 4px; }
         .card-img { height: 180px; }
     }
 </style>
@@ -234,25 +249,23 @@
 
 <header>
     <div class="header-content">
-        <img src="images/logo.png" alt="XFULL Tech Logo" class="site-logo">
+        <img src="logo.png" alt="XFULL Tech Logo" class="site-logo">
         <div class="header-text">
             <h1>XFULL Tech</h1>
             <p>Your Partner for ID Card Accessories &amp; Precision Cleaning Solutions</p>
         </div>
     </div>
+    <div class="banner-wrapper">
+        <img src="banner.jpg" alt="XFULL Tech Products" class="banner-img">
+    </div>
 </header>
-
-<!-- BANNER -->
-<div class="banner-container">
-    <img src="images/banner.jpg" alt="ID Card Accessories Banner" class="banner-img">
-</div>
 
 <div class="container">
 
     <!-- ABOUT US -->
     <section class="about">
         <h2 class="section-title">About Us</h2>
-        <p>XFULL Tech is a specialist supplier of ID card accessories and precision cleaning solutions. With 12 years of experience in the industry, we help businesses source PVC cards, smart chip cards, lanyards, RFID protectors, and printer maintenance supplies. We support small orders and hard-to-find items.</p>
+        <p>XFULL Tech is a specialist supplier of ID card accessories and precision cleaning solutions. With 12 years of experience in the ID card industry, we help businesses source PVC cards, chip cards, lanyards, RFID protectors, card holders, and printer maintenance supplies. Small orders and hard-to-find items are welcome.</p>
     </section>
 
     <!-- PRODUCTS -->
@@ -261,78 +274,79 @@
 
         <!-- PVC CARDS -->
         <div class="card">
-            <img src="images/pvc-cards.jpg" alt="PVC Cards" class="card-img">
+            <img src="pvc-cards.png" alt="PVC & Chip Cards" class="card-img">
             <div class="card-body">
-                <h3>PVC &amp; Smart Cards</h3>
+                <h3>PVC &amp; Chip Cards</h3>
                 <ul>
-                    <li>Blank White / Colored PVC</li>
-                    <li>FM4428 / NTAG213 Chips</li>
-                    <li>Mifare S50 / Fudan F08</li>
+                    <li>Blank PVC cards (CR80)</li>
+                    <li>FM4428 / FM4442</li>
+                    <li>NTAG213 / 215 / 216</li>
+                    <li>Mifare Classic 1K (S50)</li>
                 </ul>
             </div>
         </div>
 
         <!-- LANYARDS -->
         <div class="card">
-            <img src="images/lanyards.jpg" alt="Lanyards" class="card-img">
+            <img src="lanyards.jpg" alt="Lanyards" class="card-img">
             <div class="card-body">
-                <h3>Lanyards &amp; Holders</h3>
+                <h3>Lanyards</h3>
                 <ul>
-                    <li>Custom Printed Lanyards</li>
-                    <li>Standard &amp; Premium Materials</li>
-                    <li>Badge Holders Available</li>
+                    <li>Custom printed lanyards</li>
+                    <li>Standard &amp; premium materials</li>
+                    <li>Different widths &amp; colors</li>
                 </ul>
             </div>
         </div>
 
         <!-- RFID HOLDERS -->
         <div class="card">
-            <img src="images/rfid-holders.jpg" alt="RFID Holders" class="card-img">
+            <img src="rfid-holders.jpg" alt="RFID Protection" class="card-img">
             <div class="card-body">
                 <h3>RFID Protection</h3>
                 <ul>
-                    <li>RFID Blocking Sleeves</li>
-                    <li>Anti-Skimming Protectors</li>
-                    <li>Custom Sizes Available</li>
+                    <li>RFID blocking card sleeves</li>
+                    <li>Anti-skimming protectors</li>
+                    <li>Custom colors &amp; printing</li>
                 </ul>
             </div>
         </div>
 
         <!-- CARD HOLDERS -->
         <div class="card">
-            <img src="images/card-holder.jpg" alt="Card Holders" class="card-img">
+            <img src="card-holders.png" alt="Card Holders" class="card-img">
             <div class="card-body">
                 <h3>Card Holders</h3>
                 <ul>
-                    <li>Vertical &amp; Horizontal Styles</li>
-                    <li>Clear &amp; Frosted Options</li>
-                    <li>Durable PVC Material</li>
+                    <li>Plastic badge holders</li>
+                    <li>ID card holders</li>
+                    <li>Custom sizes available</li>
                 </ul>
             </div>
         </div>
 
         <!-- CLEANING KITS -->
         <div class="card">
-            <img src="images/cleaning-kits.jpg" alt="Cleaning Kits" class="card-img">
+            <img src="cleaning-kits.png" alt="Printer Cleaning Kits" class="card-img">
             <div class="card-body">
                 <h3>Printer Cleaning Kits</h3>
                 <ul>
-                    <li>Cleaning Cards &amp; Swabs</li>
-                    <li>For Zebra / Evolis / Fargo</li>
-                    <li>Extend Printhead Life</li>
+                    <li>Cleaning cards &amp; swabs</li>
+                    <li>Cleaning pens &amp; rollers</li>
+                    <li>Compatible with Zebra, Evolis, Fargo</li>
                 </ul>
             </div>
         </div>
 
-        <!-- CLEANROOM WIPES -->
+        <!-- CLEANING WIPES -->
         <div class="card">
-            <img src="images/cleanroom-wipes.png" alt="Cleanroom Wipes" class="card-img">
+            <img src="cleaning-wipes.png" alt="Cleanroom Wipes" class="card-img">
             <div class="card-body">
                 <h3>Cleanroom Consumables</h3>
                 <ul>
-                    <li>Low-Lint Polyester Wipes</li>
-                    <li>Foam Tipped Swabs</li>
-                    <li>For Labs &amp; Workshops</li>
+                    <li>Low-lint cleanroom wipes</li>
+                    <li>Roll wipes &amp; cleanroom paper</li>
+                    <li>Cleanroom swabs</li>
                 </ul>
             </div>
         </div>
@@ -343,31 +357,32 @@
     <section class="why">
         <h2 class="section-title">Why Choose XFULL Tech</h2>
         <ul>
-            <li>✅ 12+ Years Industry Experience</li>
-            <li>✅ Small MOQ Accepted</li>
-            <li>✅ Fast Response &amp; Support</li>
-            <li>✅ Custom Sourcing Service</li>
+            <li>12+ Years Industry Experience</li>
+            <li>Small MOQ Accepted</li>
+            <li>Hard-to-find Items Sourcing</li>
+            <li>Fast Response within 12 Hours</li>
+            <li>Global Shipping Support</li>
+            <li>OEM / Custom Branding Available</li>
         </ul>
     </section>
 
     <!-- CTA -->
     <div class="cta">
-        <a href="mailto:hebe@xfulltech.com">📩 Send Inquiry Now</a>
+        <a href="mailto:hebe@xfulltech.com?subject=Inquiry%20from%20XFULL%20Website">Send Inquiry Now</a>
     </div>
 
     <!-- CONTACT -->
     <section class="contact">
         <h2 class="section-title">Contact Us</h2>
-        <p><span class="label">📧 Email:</span> <a href="mailto:hebe@xfulltech.com">hebe@xfulltech.com</a></p>
-        <p><span class="label">📞 Phone:</span> <a href="tel:+8613570667649">+86 135 7066 7649</a></p>
-        <p><span class="label">💬 WhatsApp:</span> <a href="https://wa.me/8613570667649" target="_blank">+86 135 7066 7649</a></p>
-        <p><span class="label">🌐 Website:</span> <a href="https://www.xfulltech.com" target="_blank">www.xfulltech.com</a></p>
+        <p><span class="label">Email:</span> <a href="mailto:hebe@xfulltech.com">hebe@xfulltech.com</a></p>
+        <p><span class="label">Phone:</span> <a href="tel:+8613570667649">+86 135 7066 7649</a></p>
+        <p><span class="label">WhatsApp:</span> <a href="https://wa.me/8613570667649" target="_blank">+86 135 7066 7649</a></p>
     </section>
 
 </div>
 
 <footer>
-    &copy; 2026 XFULL Tech. All rights reserved.
+    &copy; 2026 XFULL Tech. All rights reserved. | ID Card Accessories &amp; Precision Cleaning Solutions
 </footer>
 
 </body>

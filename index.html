@@ -58,11 +58,15 @@
         padding: 0 20px;
     }
     .banner-img {
-        width: 100%;
-        height: auto;
-        border-radius: 14px;
-        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-        display: block;
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* 限制最大高度，防止太高 */
+    object-fit: cover; /* 保持比例，不拉伸变形 */
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    display: block;
+    image-rendering: -webkit-optimize-contrast; /* 优化渲染清晰度 */
+}
     }
 
     /* CONTAINER */

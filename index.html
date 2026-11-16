@@ -94,7 +94,24 @@
         box-shadow: 0 4px 12px rgba(0,0,0,0.04);
         margin-bottom: 40px;
     }
-    .about p { font-size: 1.05rem; color: #475569; }
+    /* About Us 内容样式 */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* 三行之间的间距 */
+}
+
+.about-content p {
+    font-size: 1.05rem;
+    color: #475569;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.about-content strong {
+    color: var(--primary); /* 使用你的品牌蓝色 */
+    font-weight: 600;
+}
 
     /* PRODUCT GRID */
     .grid {
@@ -261,12 +278,13 @@
 
     <!-- ABOUT US -->
     <section class="about">
-        <h2 class="section-title">About Us</h2>
-        <p>XFULL TECH Focues On All Products For ID Cards:
-             PVC/PET Blank Cards,Chip Cards,RFID Cards•Lanyards & Card Holders • RFID Protectors & Security Sleeves • Printer Cleaning Kits, Wipes & Swabs. 
-             Custom Made /Custom Sourcing & OEM Services, Small Quantity Orders are always welcome.</p>
-    </section>
-
+    <h2 class="section-title">ABOUT US</h2>
+    <div class="about-content">
+        <p><strong>Specialist Supplier:</strong>XFULL TECH Focues On All Products For ID Cards.</p>
+        <p><strong>12 Years Experience:</strong> PVC/PET Blank Cards,Chip Cards,RFID Cards•Lanyards & Card Holders • RFID Protectors & Security Sleeves • Printer Cleaning Kits, Wipes & Swabs.</p>
+        <p><strong>Flexible Service:</strong> Custom Made /Custom Sourcing & OEM Services, Small Quantity Orders are always welcome.</p>
+    </div>
+</section>
     <!-- PRODUCTS -->
     <h2 class="section-title">Our Products</h2>
     <div class="grid">

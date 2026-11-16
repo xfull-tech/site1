@@ -77,13 +77,15 @@
         padding: 50px 20px;
     }
 
-    /* SECTION TITLE */
     .section-title {
-        font-size: 1.7rem;
-        color: var(--dark);
-        border-left: 5px solid var(--primary);
-        padding-left: 15px;
-        margin-bottom: 25px;
+    font-size: 1.7rem;
+    color: var(--dark);
+    padding-left: 0;       /* 去掉左边距 */
+    margin-bottom: 25px;
+    /* 可选：加个下划线代替竖线，看起来更清爽 */
+    border-bottom: 2px solid #e2e8f0; 
+    padding-bottom: 10px;
+}
     }
 
     /* ABOUT */
@@ -158,18 +160,13 @@
         flex: 1;
     }
     .card-body li {
-        padding: 4px 0 4px 20px;
-        position: relative;
-        color: #475569;
-        font-size: 0.95rem;
-    }
-    .card-body li::before {
-        content: "✔";
-        position: absolute;
-        left: 0;
-        color: var(--primary);
-        font-weight: bold;
-    }
+    padding: 4px 0;        /* 去掉左边距，因为不需要放符号了 */
+    color: #475569;
+    font-size: 0.95rem;
+    list-style-type: disc; /* 恢复默认的小圆点，或者用 none 变成纯文本 */
+    margin-left: 20px;     /* 如果想保留一点缩进 */
+}
+/* 删除 .card-body li::before 整个块 */
 
     /* OUR Advantage */
     .why {
@@ -179,20 +176,7 @@
         box-shadow: 0 4px 12px rgba(0,0,0,0.04);
         margin-bottom: 40px;
     }
-    .why ul {
-        list-style: none;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px;
-    }
-    .why li {
-        background: #f1f5f9;
-        padding: 15px 18px;
-        border-radius: 10px;
-        font-size: 0.95rem;
-        color: var(--dark);
-        border-left: 4px solid var(--primary);
-    }
+    
 
     /* CTA */
     .cta {
@@ -368,20 +352,21 @@
             </div>
         </div>
 
+        <!-- Custom Sourcing -->
+        <div class="card">
+            <img src="custom-sourcing.png" alt="Custom Sourcing" class="card-img">
+            <div class="card-body">
+                <h3>Custom Sourcing</h3>
+                <ul>
+                    <li>Hard-to-find items</li>
+                    <li>Small MOQ support</li>
+                    <li>Custom branding</li>
+                    <li>OEM / ODM services</li>
+                </ul>
+            </div>
+        </div>
+        
     </div>
-
-    <!-- WHY CHOOSE US -->
-    <section class="why">
-        <h2 class="section-title">Why Choose XFULL Tech</h2>
-        <ul>
-            <li>12+ Years Industry Experience</li>
-            <li>Small MOQ Accepted</li>
-            <li>Hard-to-find Items Sourcing</li>
-            <li>Fast Response within 12 Hours</li>
-            <li>Global Shipping Support</li>
-            <li>OEM / Custom Branding Available</li>
-        </ul>
-    </section>
 
     <!-- CTA -->
     <div class="cta">
